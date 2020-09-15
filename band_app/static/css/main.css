@@ -1,0 +1,484 @@
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: 'Raleway';
+}
+
+.navbar li {
+    font-size: 18px;
+    padding: 10px;  
+    color: white;
+} 
+
+.navbar li a{
+    color: black;
+}
+
+
+hr {
+    border: 1px solid grey !important;
+}
+
+
+.navbar .active {
+    color: purple !important;
+}
+
+
+.navbar-brand {
+    color: black;
+    border: 2px solid purple;
+    padding: 7px 35px;
+    font-weight: bolder;
+    font-family: 'Montez', cursive;
+    font-size: 200%;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+  }
+
+
+#home {  
+    background: url("/static/images/hero.jpg");
+    width: 100% !important;
+    height:100vh;
+    display: table;
+    position: relative;
+    background-position:center; 
+    background-attachment:scroll; 
+    -o-background-size:cover; 
+    -moz-background-size:cover; 
+    -webkit-background-size:cover; 
+    background-size:cover; 
+    background-repeat:no-repeat;
+}
+
+
+.landing-text { 
+	text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+} 
+
+
+.landing-text h2 span {
+	font-size: 270%;
+    font-weight: bolder;
+    color: white;
+}
+
+
+.landing-text h2, h4 {
+    font-family: 'Montez', cursive;
+    color : #FFFFFF;
+    font-weight: bolder !important;
+    font-size: 190%;
+}
+
+
+.upcoming {
+    font-family: 'Montez', cursive; 
+    font-size: 400%;
+}
+
+.concert {
+    font-family: 'Montez', cursive; 
+    font-size: 400%;
+}
+
+
+.index-img{
+        height: 23rem;
+}
+
+
+.index-body{
+    height: 10rem;
+}
+
+
+.card-text {
+    font-family: 'Montez', cursive;
+    font-size: 150%;
+    font-weight: bolder;
+}
+
+
+.dj img {
+    width: 100%;
+}
+
+.dj h3 {
+    font-family: 'Montez', cursive;
+    font-size: 250%;
+    font-weight: bolder;
+}
+
+.padding {
+    padding-top: 80px
+}
+
+.songs img {
+    width: 100%;
+    margin-bottom: 20px;  
+}
+
+#festival {
+    background: url("/static/images/fest.jpg");
+    width: 100% !important;
+    height:110vh;
+    display: table;
+    position: relative;
+    background-position:center; 
+    background-attachment:scroll; 
+    -o-background-size:cover; 
+    -moz-background-size:cover; 
+    -webkit-background-size:cover; 
+    background-size:cover; 
+    background-repeat:no-repeat;
+    
+}
+
+.festival-text { 
+	text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    position: absolute;
+    top: 30%;
+  } 
+
+
+.festival-text h3 span {
+	font-size: 150%;
+    font-weight: bolder;
+    color: white;
+    font-family: 'raleway'
+}
+
+.festival-text h4 {
+    font-family: 'Montez', cursive;
+    color : #FFFFFF;
+    font-weight: bolder !important;
+    font-size: 250%;
+}
+
+.festival-text a {
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-family: 'Montez', cursive;
+    
+}
+
+.festival-text a:hover{
+    color: white;
+}
+
+.fas, .fab {
+    font-size: 150%;
+  }
+
+.socials {
+    display: flex;
+   
+}
+
+.socials .fab {
+    padding: 15px;
+}
+
+.contact {
+    font-family: 'Montez', cursive;
+}
+
+.footer-brand {
+    color: whitesmoke;
+    border: 2px solid white;
+    padding: 7px 35px;
+    font-weight: bolder;
+    font-family: 'Montez', cursive;
+    font-size: 200%;
+}
+
+footer {
+    background-color: rgb(139,0,139) ;
+    color: whitesmoke
+}
+
+footer h4 {
+    font-family: 'Montez', cursive; 
+}
+
+/* counterdown */
+.countdown {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  
+  .timer {
+    padding: 10px;
+    font-family: 'raleway'
+    
+  }
+  
+  .timer h1 {
+    font-weight: bold;
+    font-size: 30px;
+    
+  }
+  
+  .timer small {
+    font-size:20px;
+  }
+
+/* About */
+
+  #about {  
+    background: url("/static/images/about1.jpg");
+    width: 100% !important;
+    height:100vh;
+    display: table;
+    position: relative;
+    background-position:center; 
+    background-attachment:scroll; 
+    -o-background-size:cover; 
+    -moz-background-size:cover; 
+    -webkit-background-size:cover; 
+    background-size:cover; 
+    background-repeat:no-repeat;
+  }
+  
+  
+  .about-text { 
+  text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    position: absolute;
+    top: 30%;
+  } 
+  
+  .about-text h2  {
+    font-size: 250%;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Montez', cursive;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  .about-text h4 {
+    font-family: 'Montez', cursive;
+    color : #FFFFFF;
+    font-weight: bolder !important;
+    font-size: 470%;  
+  }
+
+
+  .love img {
+    width: 100%;
+  }
+  
+
+  .love h3 {
+    font-size: 250%;
+    font-family: 'Montez', cursive;
+  }
+  
+  .love h5 {
+    font-size: 130%;
+    font-family: 'raleway';
+  }
+  
+
+  .love a {
+    font-family: 'Montez', cursive;
+  }
+
+
+ .padding {
+    padding-top: 150px;
+  }
+   
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+  }
+  
+
+  .containers:hover .overlay {
+    height: 100%; 
+  }
+
+  .text {
+    color: white; 
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .text h2 {
+      font-family: 'Montez', cursive;
+      font-size: 450%;
+  }
+  
+
+  .love h2 {
+      font-family: 'Montez', cursive;
+      font-size: 450%;
+  }
+  
+
+  .text h6{
+      font-family: 'raleway'
+  }
+  
+
+  .containers {
+      margin: 20px;
+  }
+  
+  .gallery img {
+      width: 100%;
+  }
+  
+  .meet {
+      font-family: 'Montez', cursive;
+      font-size: 450%;
+  }
+
+  /* Tours */
+
+#tour{
+  background-image: url("/static/images/fest.jpg");
+  width: 100% !important;
+  height:100vh;
+  display: table;
+  position: relative;
+  background-position:center; 
+  background-attachment:scroll; 
+  -o-background-size:cover; 
+  -moz-background-size:cover; 
+  -webkit-background-size:cover; 
+  background-size:cover; 
+  background-repeat:no-repeat;
+}
+
+
+.tour-text { 
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  position: absolute;
+  top: 25%;
+} 
+
+
+.tour-text h3 span {
+font-size: 140%;
+  font-weight: bolder;
+  color: white;
+  font-family: 'raleway'
+}
+
+.tour-text h4 {
+  font-family: 'Montez', cursive;
+  color : #FFFFFF;
+  font-weight: bolder !important;
+  font-size: 220%;
+}
+
+
+.tour-text a {
+  color: white;
+  border: 2px solid white;
+  padding: 20px 40px;
+  font-family: 'Montez', cursive; 
+}
+
+
+.tour-text a:hover{
+  color: white;
+}
+
+
+.tours img {
+  width: 100%;
+ }
+ 
+
+ .tours h1{
+     font-family: 'Montez', cursive;
+ }
+ 
+
+ .tours h5{
+     font-family: 'raleway';
+ }
+ 
+
+ .padding {
+     padding-top: 100px;
+ }
+ 
+/* Blog  */
+  .blog-card {
+  margin-bottom: 20px;
+}
+
+.blog-cardbody {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.blog-cardbody h5 {
+font-family: 'Montez', cursive;
+font-size: 200%;
+}
+
+.blog-cardbody h6 {
+font-family: 'raleway';
+font-size: 80%;
+}
+
+.blog-cardbody h4 {
+font-family: 'Montez', cursive;
+font-size: 150%;
+}
+
+.padding {
+  padding-top: 60px;
+}
+
+.article p{
+font-family: 'Montez', cursive;
+font-size: 150%;
+}
+.card-text {
+  color: black;
+}
+
+

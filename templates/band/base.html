@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detach Music</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+      <!-- Bootstrap -->
+      <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+ 
+     <!-- Raleway font -->
+     <link
+       href="https://fonts.googleapis.com/css?family=Raleway"
+       rel="stylesheet"
+     />
+ 
+     <!-- Montez font -->
+     <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+ 
+      <!-- Font awesome -->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+
+</head>
+<body>
+
+
+     <!-- Navigation -->
+    
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Detach</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link active" href="{% url 'home' %}">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'about' %}">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'tours' %}">TOURS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'blog' %}">BLOG</a>
+            </li>  
+          </ul>
+        </div>
+    </nav>
+
+    {% block content%}
+
+    {% endblock%}
+
+    <footer class = "padding">
+        <div class="container">
+         <div class="row">
+           <div class="col-md-4">
+            <h4>Phone &nbsp; &nbsp;<i class="fas fa-phone"></i></h4><br>
+            <h4>Email&nbsp;&nbsp;&nbsp;<i class="fas fa-envelope-square"></i></h4><br><br>
+           </div>
+           <h2></h2>
+           <div class="col-md-4">
+            <a class="footer-brand" href="#">Detach</a><br><br><br>
+             <div class = "socials">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-instagram"></i>
+             </div><br>
+           </div>
+           <div class="col-md-4">
+            <h2 class = "contact">CONTACT US</h2><br><br><br>
+            <div class="input-group mb-3">
+              <input type="Email" class="form-control" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">EMAIL</button>
+              </div>
+            </div>
+           </div>
+         </div>
+        </div>  
+      </footer>
+ 
+    
+    <script src = "{% static 'js/script.js' %}"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

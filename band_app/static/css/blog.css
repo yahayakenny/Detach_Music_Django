@@ -1,0 +1,35 @@
+
+.card {
+    margin-bottom: 20px;
+  }
+  
+  .card-body {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .card-body h5 {
+  font-family: 'Montez', cursive;
+  font-size: 200%;
+  }
+  
+  .card-body h6 {
+  font-family: 'raleway';
+  font-size: 80%;
+  }
+  
+  .card-body h4 {
+  font-family: 'Montez', cursive;
+  font-size: 150%;
+  }
+  
+  .padding {
+    padding-top: 60px;
+  }
+  
+  .article p{
+  font-family: 'Montez', cursive;
+  font-size: 150%;
+  }
+  
+  

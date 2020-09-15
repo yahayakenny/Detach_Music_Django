@@ -1,0 +1,232 @@
+{% extends 'band/base.html' %}
+{% load static %}
+
+
+{% block content%}
+<section id="home">
+    <div class="landing-text container-fluid " data-aos="fade-right" data-aos-duration="2000">
+      <h4>New SINGLE</h4>
+      <h2> <span>Feel the heart beats</span></h2>
+      <h4></h4>
+    </div>
+</section><br>
+
+<div class="container my-4 padding">
+  <h1 class = "upcoming">Upcoming Events </h1><br>
+  <!--Carousel Wrapper-->
+  <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+      <li data-target="#multi-item-example" data-slide-to="1"></li>
+      <li data-target="#multi-item-example" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="row">  
+          <div class="col-md-4">
+            <div class="card mb-2 ">
+              <img class="card-img-top index-img" src="{% static 'images/img1.jpg' %}"
+                alt="Card image cap">
+              <div class="card-body bg-light index-body">
+                <p class="card-text text-center">Jason Derulo</p>
+                <h4 class="card-text text-center" style = "color: purple">Dec 31, 2020</h4>      
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top index-img" src="{% static 'images/img2.jpg' %}"
+                alt="Card image cap">
+              <div class="card-body bg-light index-body">
+                  <p class="card-text text-center">David Guetta Miami</p>
+                  <h4 class="card-text text-center" style = "color: purple">Dec 15, 2020</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top index-img" src="{% static 'images/img3.jpg' %}"
+                alt="Card image cap">
+              <div class="card-body bg-light index-body">
+                  <p class="card-text text-center">Ed Sheeran</p>
+                  <h4 class="card-text text-center" style = "color: purple">Dec 5, 2020</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--/.First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-2">
+              <img class="card-img-top index-img" src="{% static 'images/img8.jpg' %}"
+                alt="Card image cap">
+              <div class="card-body bg-light index-body">     
+                  <p class="card-text text-center">Anne Marie</p>
+                  <h4 class="card-text text-center" style = "color: purple">Nov 31, 2020</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top index-img" src="{% static 'images/img4.jpg' %}"
+                alt="Card image cap">
+              <div class="card-body bg-light index-body">  
+                  <p class="card-text text-center ">J.P Saxe</p>
+                  <h4 class="card-text text-center" style = "color: purple">Nov 15, 2020</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top index-img" src="{% static 'images/img5.jpg' %}"
+                alt="Card image cap">
+              <div class="card-body bg-light index-body">
+                  <p class="card-text text-center">Rhys Lewis</p>
+                  <h4 class="card-text text-center" style = "color: purple">Nov 5, 2020</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--/.Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-2">
+              <img class="card-img-top index-img" src="{% static 'images/img6.jpg' %}"
+                alt="Card image cap">
+              <div class="card-body bg-light index-body">   
+                  <p class="card-text text-center">Tory Lanez</p>
+                  <h4 class="card-text text-center" style = "color: purple">Dec Oct 31, 2020</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top index-img " src="{% static 'images/img7.jpg' %}"
+                alt="Card image cap">
+              <div class="card-body bg-light index-body">
+                <p class="card-text text-center">Koffee</p>
+                <h4 class="card-text text-center" style = "color: purple">Oct 15, 2020</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top index-img" src="{% static 'images/img9.jpg' %}"
+                alt="Card image cap">
+              <div class="card-body bg-light index-body">
+                <p class="card-text text-center">Jessie Reyez</p>
+                <h4 class="card-text text-center" style = "color: purple"> Oct 5, 2020</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--/.Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+   <!--Controls-->
+   <div class="controls-top text-center">
+      <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+      <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+    </div>
+    <!--/.Controls-->
+
+</div>
+
+
+  <section class="section padding">
+    <div class="container">
+      <div class="row dj">
+        <div class="col-md-5">
+          <img src="{% static 'images/about.png' %}" alt="">
+        </div>
+        <div class="col-md-7">
+          <br><h3>DJ Alexander</h3>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nulla delectus reiciendis, porro iure aperiam unde esse eveniet maxime omnis a molestiae corporis optio fugiat, numquam ipsum facilis nobis id.</h5><br>
+          <button type="button" class="btn btn-lg btn-outline-danger">
+            CONTACT US
+          </button>
+        </div>
+      </div>
+    </div> 
+  </section><br>
+
+
+  <section class = "container">
+    <h1 class = "text-center concert">Concerts</h1><br>
+    
+    <div class="row songs">
+      {% for concert in concerts%}
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <img src="{{concert.image.url}}" alt="" data-aos="zoom-in-down" data-aos-duration="2000">
+     </div>
+     {% endfor %}
+  </section>
+
+
+  <section id="festival">
+    <div class="festival-text container-fluid " data-aos="fade-right" data-aos-duration="2000">
+      <h4>Tomorrowland Festival 2020</h4>
+      <h3> <span>MUSIC FESTIVAL BEGINS IN </span></h3>
+      <div class='countdown'>
+        <div class='timer'>
+            <h1 id='days' data-aos="flip-left"    data-aos-easing="ease-out-cubic"
+            data-aos-duration="2500">00</h1>
+            <small>Days</small>
+        </div>
+       
+        <div class='timer'>
+            <h1 id='hours' data-aos="flip-left"    data-aos-easing="ease-out-cubic"
+            data-aos-duration="2500">00</h1>
+            <small>Hours</small>
+        </div>
+       
+        <div class='timer'>
+            <h1 id='minutes' data-aos="flip-left"    data-aos-easing="ease-out-cubic"
+            data-aos-duration="2500">00</h1>
+            <small>Minutes</small>
+        </div>
+       
+        <div class='timer'>
+            <h1 id='seconds' data-aos="flip-left"    data-aos-easing="ease-out-cubic"
+            data-aos-duration="2500">00</h1>
+            <small>Seconds</small>
+        </div>      
+      </div><br>
+      
+      <button type="button" class="btn btn-lg btn-outline-danger">
+        BUY TICKETS
+      </button>
+    </div>
+ </section>
+{% endblock%}

@@ -1,0 +1,118 @@
+{% extends 'band/base.html' %}
+{% load static %}
+
+{% block content%}
+    
+<section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card bg-light">
+            <img
+              src="{% static 'images/about1.jpg' %}"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center lead blog-cardbody">
+              <h5 class="card-title">Music Festival
+              </h5>
+              <p class="card-text">
+                  Guidelines for music festival event organisers: music festival harm reduction - December 2020
+              </p>
+              <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor incididunt ut labore et dolore</p>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-light">
+              <img
+                src="{% static 'images/about1.jpg' %}"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center lead ">
+                <h4 class="card-text">
+                  2020 Music Festival
+                </h4>
+              </div>
+          </div>
+          <br>
+          <div class="card bg-light">
+              <img
+                src="{% static 'images/about1.jpg' %}"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body  text-center">
+                <h4 class="card-text">
+                  2020 Music Festival
+                </h4>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <article class = "container padding article">
+      <div class="row">
+          <div class = "col-md-4">
+              <div class="card bg-light">
+                  <img
+                    src="{% static 'images/about1.jpg' %}"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body  text-center">
+                    <h4 class="card-text">
+                      2020 Music Festival
+                    </h4>
+                    <h6>By ERNA O’CONNER Dec 17, 2019 | Dec 17, 2020 </h6>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card bg-light">
+                  <img
+                    src="{% static 'images/about1.jpg' %}"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body text-center lead">
+                    <h4 class="card-text">
+                      2020 Music Festival
+                    </h4>
+                    <h6>By ERNA O’CONNER Dec 17, 2019 | Dec 17, 2020 </h6>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="row">
+                      <div class="col-md-6">
+                          <img src="{% static 'images/about1.jpg' %}" alt="" width="100%">
+                      </div>
+                      <div class="col-md-6">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      </div>
+              </div><br>
+              <div class="row">
+                      <div class="col-md-6">
+                          <img src="{% static 'images/about1.jpg' %}" alt="" width="100%">
+                      </div>
+                      <div class="col-md-6">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      </div>
+              </div><br>
+              <div class="row">
+                      <div class="col-md-6">
+                          <img src="{% static 'images/about1.jpg' %}" alt="" width="100%">
+                      </div>
+                      <div class="col-md-6">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      </div>
+              </div>
+          </div>       
+      </div>
+    </article>
+{% endblock%}

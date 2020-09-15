@@ -1,0 +1,77 @@
+{% extends 'band/base.html' %}
+{% load static %}
+
+{% block content%}
+   <section id="about">
+      <div class="about-text container-fluid " data-aos="fade-right" data-aos-duration="2000">
+        <h4>About Us</h4>
+        <h2> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptate, laudantium facere.
+        </span></h2>
+      </div>
+    </section>
+
+    <section class=" padding love">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-7">
+            <img src="{% static 'images/fest.jpg' %}" alt="">
+          </div>
+          <div class="col-md-5">
+            <br><h3>We Love Music</h3><br>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nulla delectus reiciendis, porro iure aperiam unde esse eveniet maxime omnis a molestiae corporis optio fugiat, numquam ipsum facilis nobis id.</h5><br>
+            <a href="#" class="btn btn-danger btn-lg">Contact Us</a>
+          </div>
+        </div>
+      </div>      
+  </section>
+
+  <div class="container padding">
+    <h1 class = "text-center meet">Meet the team</h1>
+    <div class="row">
+       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+           <div class="containers">
+             <img src="{% static 'images/img1.jpg'%} " alt="Avatar" class="image">
+             <div class="overlay">
+               <div class="text">
+                   <h2>Jacob Michael</h2>
+                   <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h6>
+               </div>
+             </div>                  
+           </div>
+       </div>
+       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+           <div class="containers">
+             <img src="{% static 'images/img9.jpg'%} " alt="Avatar" class="image">
+             <div class="overlay">
+               <div class="text">
+                   <h2>John Williams</h2>
+                   <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h6>
+               </div>
+             </div>                                             
+           </div>
+       </div><br>
+       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+           <div class="containers">
+             <img src="{% static 'images/img6.jpg'%} " alt="Avatar" class="image">
+             <div class="overlay">
+               <div class="text">
+                   <h2>Megan smith</h2>
+                   <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h6>
+               </div>
+             </div>                                
+           </div>
+       </div>
+   </div>
+  </div>
+
+  <br><br><br><br><section class = "container">
+    <h1 class = "text-center concert">Gallery</h1><br>
+    <div class="row songs">
+      {% for gallery in gallerys %}
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <img src="{{gallery.image.url}}" alt="" data-aos="zoom-in-down" data-aos-duration="2000">
+     </div>
+     {% endfor %}
+  </section>
+
+{% endblock%}
