@@ -3,17 +3,19 @@ from band_app.models import *
 
 # Create your views here.
 def home(request):
-    concerts = Concert.objects.all()
-    return render(request, 'band/index.html', {'concerts': concerts})
+    events = Event.objects.all()
+    return render(request, 'band/index.html', {'events': events})
 
 def about(request):
     gallerys = Concert.objects.all()
-    return render(request, 'band/about.html',{'gallerys': gallerys} )
+    teams = Team.objects.all()
+    return render(request, 'band/about.html',{'gallerys': gallerys, 'teams':teams})
 
 def tours(request):
     gallerys = Concert.objects.all()
-    return render(request, 'band/tours.html',{'gallerys': gallerys} )
+    tours = Tour.objects.all()
+    return render(request, 'band/tours.html',{'gallerys': gallerys, 'tours': tours} )
 
 def blog(request):
-    gallerys = Concert.objects.all()
-    return render(request, 'band/blog.html',{'gallerys': gallerys} )
+    blogs = Blog.objects.all()
+    return render(request, 'band/blog.html',{'blogs': blogs} )

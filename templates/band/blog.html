@@ -7,6 +7,7 @@
   <br>
     <div class="container">
       <div class="row">
+
         <div class="col-md-8">
           <div class="card bg-light">
             <img
@@ -58,61 +59,40 @@
 
   <article class = "container padding article">
       <div class="row">
+        {% for blog in blogs%}
           <div class = "col-md-4">
               <div class="card bg-light">
                   <img
-                    src="{% static 'images/about1.jpg' %}"
+                    src="{{blog.image.url }}"
                     class="card-img-top"
                     alt="..."
                   />
                   <div class="card-body  text-center">
                     <h4 class="card-text">
-                      2020 Music Festival
+                      {{blog.title}}
                     </h4>
-                    <h6>By ERNA O’CONNER Dec 17, 2019 | Dec 17, 2020 </h6>
-                  </div>
+                    <h6>{{blog.author}} </h6>
+                  </div><br><br>
               </div>
           </div>
-          <div class="col-md-4">
-              <div class="card bg-light">
-                  <img
-                    src="{% static 'images/about1.jpg' %}"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body text-center lead">
-                    <h4 class="card-text">
-                      2020 Music Festival
-                    </h4>
-                    <h6>By ERNA O’CONNER Dec 17, 2019 | Dec 17, 2020 </h6>
+          {% endfor %}
+
+          <div class="container">
+            <div class="row">
+              {% for blog in blogs%}
+              <div class="col-md-4">
+                <div class="row ">
+                  <div class="col-md-6">
+                      <img src="{{blog.image.url }}" alt="" width="100%">
                   </div>
+                  <div class="col-md-6">
+                      <p class = "desc">{{blog.description}}</p>
+                  </div>      
+                </div><br>
+  
               </div>
-          </div>
-          <div class="col-md-4">
-              <div class="row">
-                      <div class="col-md-6">
-                          <img src="{% static 'images/about1.jpg' %}" alt="" width="100%">
-                      </div>
-                      <div class="col-md-6">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      </div>
-              </div><br>
-              <div class="row">
-                      <div class="col-md-6">
-                          <img src="{% static 'images/about1.jpg' %}" alt="" width="100%">
-                      </div>
-                      <div class="col-md-6">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      </div>
-              </div><br>
-              <div class="row">
-                      <div class="col-md-6">
-                          <img src="{% static 'images/about1.jpg' %}" alt="" width="100%">
-                      </div>
-                      <div class="col-md-6">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      </div>
-              </div>
+              {% endfor %} 
+            </div>
           </div>       
       </div>
     </article>

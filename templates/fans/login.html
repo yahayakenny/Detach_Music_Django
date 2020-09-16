@@ -1,0 +1,23 @@
+{% extends 'band/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<br>
+ <div class = "body container-fluid container">
+    <div class="container container-fluid top">
+        <h1 class = "text-secondary text-center">Login Here</h1>
+    </div>
+    <div class="container container-fluid">
+        <form id = "form" method="POST"> 
+            {% csrf_token %}  
+            {{form | crispy}}
+            <input type="submit" name = "Login" class="btn btn-lg btn-block" type="button" style = "color: white ;background-color: rgb(139, 0, 139)">
+            <br>
+            <h6>Don't have an account yet?</h6>
+            <a style = "font-size: 13px" href="{% url 'register'%}">Register here</a>
+            <br><br> <h5 style = "color: white">Forgot password?</h5>
+            
+      </form>       
+    </div>
+</div>  
+{% endblock %}

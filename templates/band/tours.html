@@ -64,93 +64,27 @@
     </div>
   </section>
 
-
-
   <section class="tours padding">
     <div class="container">
+      {% for tour in tours %}
       <div class="row">
-        <div class="col-md-5">
-          <img
-            src="{% static 'images/hero.jpg' %}"
-            alt=""
-          />
-        </div>
-        <div class="col-md-7">
-          <br />
-          <h1>Untold Festival 2020</h1>
-          <h5>8:00pm Dec 15, 2020</h5>
-          <h5>Funkhaus Berlin, Berlin, Germany</h5>
-          <hr />
-          <h5>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            nulla delectus reiciendis, porro iure aperiam unde esse eveniet
-            maxime omnis a molestiae corporis optio fugiat, numquam ipsum
-            facilis nobis id.
-          </h5>
-          <br />
-          <button type="button" class="btn btn-lg btn-outline-danger">
-            BUY TICKETS
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <br />
-
-  <section class="tours padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <br />
-            <h1>Untold Festival 2020</h1>
-            <h5>8:00pm Dec 15, 2020</h5>
-            <h5>Funkhaus Berlin, Berlin, Germany</h5>
-            <hr />
-            <h5>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              nulla delectus reiciendis, porro iure aperiam unde esse eveniet
-              maxime omnis a molestiae corporis optio fugiat, numquam ipsum
-              facilis nobis id.
-            </h5>
-            <br />
+          <div class="col-md-5">
+            <img src="{{tour.image.url}}"  alt="" />
+          </div>
+          <div class="col-md-7">
+            <br/>
+            <h1>{{tour.name}}</h1>
+            <h5>8{{tour.date}}</h5>
+            <h5>{{tour.venue}}</h5>
             <button type="button" class="btn btn-lg btn-outline-danger">
               BUY TICKETS
             </button>
-          </div>
-          <div class="col-md-6">
-            <br><br><img src="{% static 'images/fest.jpg' %}" alt="" />
-          </div>
-        </div>
+            <hr/>
+            <h5>{{tour.description}}</h5>
+            <br/><br /><br><br/><br>
+         </div>    
       </div>
-    </section>
-    <br />
-
-  <section class="tours padding">
-    <div class="container">
-      <div class="row">
-          <div class="col-md-5">
-              <img src="{% static 'images/about1.jpg' %}"  alt="" />
-            </div>
-        <div class="col-md-7">
-          <br />
-          <h1>Untold Festival 2020</h1>
-          <h5>8:00pm Dec 15, 2020</h5>
-          <h5>Funkhaus Berlin, Berlin, Germany</h5>
-          <hr />
-          <h5>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            nulla delectus reiciendis, porro iure aperiam unde esse eveniet
-            maxime omnis a molestiae corporis optio fugiat, numquam ipsum
-            facilis nobis id.
-          </h5>
-          <br />
-          <button type="button" class="btn btn-lg btn-outline-danger">
-            BUY TICKETS
-          </button>
-        </div>    
-      </div>
+      {% endfor %}
     </div>
   </section>
-  <br /><br>
-
 {% endblock%}
