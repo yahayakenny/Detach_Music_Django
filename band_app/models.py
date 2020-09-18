@@ -12,7 +12,6 @@ class Event(models.Model):
     image2 = models.ImageField(blank = True, null = True)
     artiste2 = models.CharField(max_length=50, blank = True, null = True)
     date2 = models.CharField(max_length=50, blank = True, null = True)
-
     image3 = models.ImageField(blank = True, null = True)
     artiste3 = models.CharField(max_length=50, blank = True, null = True)
     date3 = models.CharField(max_length=50, blank = True, null = True)
@@ -29,7 +28,6 @@ class Tour(models.Model):
     date = models.CharField(max_length=50, blank = True, null = True)
     venue = models.CharField(max_length=50, blank = True, null = True)
     description = models.CharField(max_length=200, blank = True, null = True)
-    slug = models.SlugField()
     price = models.FloatField(default=1)
 
 
