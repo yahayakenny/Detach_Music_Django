@@ -76,9 +76,8 @@
             <h1>{{tour.name}}</h1>
             <h5>8{{tour.date}}</h5>
             <h5>{{tour.venue}}</h5>
-            <button type="button" class="btn btn-lg btn-outline-danger">
-              BUY TICKETS
-            </button>
+            <a href="cart/{{ tour.slug }}" class="btn btn-success">Add to Cart</a>
+
             <hr/>
             <h5>{{tour.description}}</h5>
             <br/><br /><br><br/><br>

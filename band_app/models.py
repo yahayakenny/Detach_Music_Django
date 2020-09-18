@@ -29,6 +29,8 @@ class Tour(models.Model):
     date = models.CharField(max_length=50, blank = True, null = True)
     venue = models.CharField(max_length=50, blank = True, null = True)
     description = models.CharField(max_length=200, blank = True, null = True)
+    slug = models.SlugField()
+    price = models.FloatField(default=1)
 
 
 class Blog(models.Model):

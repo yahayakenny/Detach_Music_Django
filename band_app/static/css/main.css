@@ -441,7 +441,7 @@ footer h4 {
 
 .article p {
   font-family: 'Montez', cursive;
-  font-size: 30px ;
+  font-size: 30px;
 }
 
 .card-text {
@@ -449,15 +449,15 @@ footer h4 {
 }
 
 form {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
   padding: 50px;
 }
 
 .message {
   font-family: 'Montez', cursive;
+  
 }
-
 
 .message-container {
   display: flex;
@@ -467,10 +467,9 @@ form {
   height: 70vh;
 }
 
-
 @media (max-width: 767px) {
   form {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 50px;
   }
