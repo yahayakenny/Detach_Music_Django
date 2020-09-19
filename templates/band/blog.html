@@ -1,101 +1,31 @@
 {% extends 'band/base.html' %}
 {% load static %}
-
 {% block content%}
     
-<section>
+<section >
   <br>
+  <h2 class = "container text-center" >BLOG POSTS</h2><br>
+  {% for blog in blogs %}
     <div class="container">
       <div class="row">
-
-        <div class="col-md-8">
-          <div class="card bg-light">
-            <img
-              src="{% static 'images/about1.jpg' %}"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body text-center lead blog-cardbody">
-              <h5 class="card-title">Music Festival
-              </h5>
-              <p class="card-text">
-                  Guidelines for music festival event organisers: music festival harm reduction - December 2020
-              </p>
-              <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor incididunt ut labore et dolore</p>
-              <hr>
-            </div>
-          </div>
+        <div class = "col-md-8">
+            <div class="card bg-light">
+                <div class="card-body ">
+                  <h3 >
+                    {{blog.title}}
+                  </h3>
+                  <h5 class="card-text">By {{blog.author}} </h5>
+                  <h6 class = "lead">
+                    {{blog.caption}}
+                  </h6>
+                  <a href="{% url 'blog_detail' blog.id %}">Read More</a>
+                  <div style = "float: right; color : red">
+                    <a href="/delete/{{blog.id}}"><i class="fas fa-trash-alt" style = "color: rgb(139, 0, 139)"></i></a>
+                  </div>
+                </div>
+            </div><br><br>
         </div>
-        <div class="col-md-4">
-          <div class="card bg-light">
-              <img
-                src="{% static 'images/about1.jpg' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body text-center lead ">
-                <h4 class="card-text">
-                  2020 Music Festival
-                </h4>
-              </div>
-          </div>
-          <br>
-          <div class="card bg-light">
-              <img
-                src="{% static 'images/about1.jpg' %}"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body  text-center">
-                <h4 class="card-text">
-                  2020 Music Festival
-                </h4>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      {% endfor %}
   </section>
-
-  <article class = "container padding article">
-      <div class="row">
-        {% for blog in blogs%}
-          <div class = "col-md-4">
-              <div class="card bg-light">
-                  <img
-                    src="{{blog.image.url }}"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body  text-center">
-                    <h4 class="card-text">
-                      {{blog.title}}
-                    </h4>
-                    <h6>{{blog.author}} </h6>
-                  </div>
-              </div>
-          </div>
-          {% endfor %}
-
-          <div class="container">
-            <div class="row">
-              {% for blog in blogs%}
-             
-              <div class="col-md-4">
-                <div class="row ">
-                  <div class="col-md-6">
-                    <br><br><br>
-                      <img src="{{blog.image.url }}" alt="" width="100%">
-                  </div>
-                  <div class="col-md-6">
-                      <p class = "desc">{{blog.description}}</p>
-                  </div>      
-                </div><br>
-  
-              </div>
-              {% endfor %} 
-            </div>
-          </div>       
-      </div>
-    </article>
 {% endblock%}
+

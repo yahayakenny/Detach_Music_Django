@@ -11,7 +11,7 @@
         <form id = "form" method="POST"> 
             {% csrf_token %}  
             {{form | crispy}}
-            <input type="submit" name = "Login" class="btn btn-lg btn-block" type="button" style = "color: white ;background-color: rgb(139, 0, 139)">
+            <input type="submit" value = "Login" class="btn btn-lg btn-block" type="button" style = "color: white ;background-color: rgb(139, 0, 139)">
             <br>
             <h6>Don't have an account yet?</h6>
             <a style = "font-size: 13px" href="{% url 'register'%}">Register here</a>

@@ -1,4 +1,5 @@
 from django.db import models
+from django.shortcuts import reverse
 
 # Create your models here.
 class Concert(models.Model):
@@ -28,13 +29,14 @@ class Tour(models.Model):
     date = models.CharField(max_length=50, blank = True, null = True)
     venue = models.CharField(max_length=50, blank = True, null = True)
     description = models.CharField(max_length=200, blank = True, null = True)
-    price = models.FloatField(default=1)
-
+  
+   
 
 class Blog(models.Model):
-    image = models.ImageField(blank = True, null = True)
+    
     title =  models.CharField(max_length=50, blank = True, null = True)
     author = models.CharField(max_length=50, blank = True, null = True)
-    description = models.CharField(max_length=200, blank = True, null = True)
-   
+    caption = models.CharField(max_length=100, blank = True, null = True)
+    description = models.CharField(max_length=1000, blank = True, null = True)
+    
    
