@@ -141,6 +141,8 @@ STATICFILES_DIR = [
     os.path.join(BASE_DIR, 'band_app/static')
 ]
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'band_app/static/images')
 MEDIA_URL = '/images/'
 
