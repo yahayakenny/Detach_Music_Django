@@ -32,8 +32,7 @@ class Tour(models.Model):
   
    
 
-class Blog(models.Model):
-    
+class Blog(models.Model):  
     title =  models.CharField(max_length=50, blank = True, null = True)
     author = models.CharField(max_length=50, blank = True, null = True)
     caption = models.CharField(max_length=100, blank = True, null = True)

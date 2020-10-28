@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '^h(80^ts!5ix62)(=#bna!0mktt5*)n-b&35#j-mid+a629f$a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['detach-music.herokuapp.com', '127.0.0.1']
 
