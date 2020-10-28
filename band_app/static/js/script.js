@@ -10,7 +10,6 @@ const dateAtNewYear = new Date('December 31 2020 00:00:00')
 function dynamicDateChange () {
     const currentTime = new Date();
     const timeLeft = dateAtNewYear - currentTime
-    console.log(timeLeft);
     const daysLeft = Math.floor(timeLeft / 1000 /60 /60/ 24); 
     const hoursLeft = Math.floor((timeLeft / 1000 / 60/ 60) % 24);  
     const minutesLeft = Math.floor((timeLeft / 1000/ 60) % 60)
